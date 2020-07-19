@@ -4,7 +4,7 @@ import Card from './Card.js';
 import Jumbotron from './Jumbotron.js';
 import NavBar from './NavBar.js';
 import NewsletterForm from './NewsletterForm.js';
-import './js/bootstrap.min.js';
+import './bootstrap.bundle.min.js';
 import '/css/styles.css';
 
 const LandingPage = () => {
