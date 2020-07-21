@@ -6,7 +6,7 @@ import LoginPage from './LoginPage';
 import RegistrationPage from './RegistrationPage';
 import SettingsPage from './SettingsPage';
 import './App.css';
-import './bootstrap.min.js';
+//import './bootstrap.bundle.min.js';
 import './styles.css';
 
 const PrivateRoute = ({ component: Component, ...otherProps }) => {
@@ -49,7 +49,7 @@ const App = () => {
   )
 }
 
-class App extends React.Component {
+/* class App2 extends React.Component {
   render (){
     return (
     
@@ -108,7 +108,7 @@ class App extends React.Component {
       <div className="container">
         
           <div className="row align-items-center no-gutters mb-4 mb-lg-5">
-              <div className="col-xl-8 col-lg-7"><img className="img-fluid mb-3 mb-lg-0" src={require ("assets/img/image1.jpg")} alt="" /></div>
+              <div className="col-xl-8 col-lg-7"><img className="img-fluid mb-3 mb-lg-0" src={require ("./image1.jpg")} alt="" /></div>
               <div className="col-xl-4 col-lg-5">
                   <div className="featured-text text-center text-lg-left">
                       <h4>Savvy Salons</h4>
@@ -118,7 +118,7 @@ class App extends React.Component {
           </div>
           
           <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
-              <div className="col-lg-6"><img className="img-fluid" src={require ("assets/img/image2.jpg")}  alt="" /></div>
+              <div className="col-lg-6"><img className="img-fluid" src={require ("./image2.jpg")}  alt="" /></div>
               <div className="col-lg-6">
                   <div className="bg-black text-center h-100 project">
                       <div className="d-flex h-100">
@@ -133,7 +133,7 @@ class App extends React.Component {
           </div>
           
           <div className="row justify-content-center no-gutters">
-              <div className="col-lg-6"><img className="img-fluid" src={require ("assets/img/image3.jpg")}  alt="" /></div>
+              <div className="col-lg-6"><img className="img-fluid" src={require ("./image3.jpg")}  alt="" /></div>
               <div className="col-lg-6 order-lg-first">
                   <div className="bg-black text-center h-100 project">
                       <div className="d-flex h-100">
@@ -209,7 +209,7 @@ class App extends React.Component {
               
           <div className="carousel-inner text-center">        
               <div className="carousel-item active mb-5"/>
-                  <img src={require ("assets/img/client-1.jpg")}  className="client-img justify-content-center col-12 rounded-circle" alt="client-1"/>
+                  <img src={require ("./client-1.jpg")}  className="client-img justify-content-center col-12 rounded-circle" alt="client-1"/>
                   <div className="client-info col-12">
                       <h3>Dave Stevens</h3>
                       <p className="client-caption col-12 text-black-50"><i className="fa fa-quote-left"></i> Aenean sit amet est orci. Aenean at nisi eget nulla lobortis commodo. Nam eget lorem in ex aliquam dapibus. <i class="fa fa-quote-right"></i></p>
@@ -217,7 +217,7 @@ class App extends React.Component {
               </div>
                   
               <div className="carousel-item mb-5"/>
-                  <img src={require ("assets/img/clients-2.jpg")}  className="client-img justify-content-center col-12 rounded-circle" alt="client-2"/>
+                  <img src={require ("./client-2.jpg")}  className="client-img justify-content-center col-12 rounded-circle" alt="client-2"/>
                   <div className="client-info col-12"/>
                       <h3>Ken Dawson</h3>
                       <p className="client-caption col-12 text-black-50"><i className="fa fa-quote-left"></i> Suspendisse non velit lacus. Mauris efficitur lorem a justo semper, ut suscipit ligula malesuada. Donec dui nulla. <i class="fa fa-quote-right"></i></p>
@@ -225,7 +225,7 @@ class App extends React.Component {
               </div>
               
                <div className="carousel-item mb-5">
-                  <img src={require ("assets/img/clients-3.jpg")}  class="client-img justify-content-center col-12 rounded-circle" alt="client-4"/>
+                  <img src={require ("./client-3.jpg")}  class="client-img justify-content-center col-12 rounded-circle" alt="client-4"/>
                   <div className="client-info col-12"/>
                       <h3>Jade Lewis</h3>
                       <p className="client-caption col-12 text-black-50"><i className="fa fa-quote-left"></i> Nunc accumsan finibus sollicitudin. Integer malesuada purus sapien, sit amet volutpat sem fringilla ut. Proin viverra scelerisque mollis. <i class="fa fa-quote-right"></i></p>
@@ -233,7 +233,7 @@ class App extends React.Component {
 
               
                <div className="carousel-item mb-5"/>
-                  <img src={require ("assets/img/clients-4.jpg")}  class="client-img justify-content-center col-12 rounded-circle" alt="client-4"/>
+                  <img src={require ("./client-4.jpg")}  class="client-img justify-content-center col-12 rounded-circle" alt="client-4"/>
                   <div className="client-info col-12"/>
                       <h3>Sam Jones</h3>
                       <p className="client-caption col-12 text-black-50"><i className="fa fa-quote-left"></i> Fusce euismod eget nulla a tempus. Pellentesque in varius metus. Fusce iaculis cursus ante, vel vestibulum dui sagittis vitae. <i class="fa fa-quote-right"></i></p>
@@ -248,7 +248,7 @@ class App extends React.Component {
                   <i className="far fa-paper-plane fa-2x mb-2 text-white"></i>
                   <h2 className="text-white mb-5">Subscribe to receive updates and exciting discounts!</h2>
                   <form className="form-inline d-flex">
-                      <input className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+                      <input className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address.." />
                       <button className="btn btn-primary mx-auto" type="submit">Subscribe</button>
                   </form>
               </div>
@@ -311,7 +311,7 @@ class App extends React.Component {
 
 };
 
-}
+} */
 
 
 export default App;
