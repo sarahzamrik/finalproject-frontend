@@ -5,9 +5,9 @@ import Jumbotron from './Jumbotron.js';
 import NavBar from './NavBar.js';
 import NewsletterForm from './NewsletterForm.js';
 import './bootstrap.bundle.min.js';
-import '/css/styles.css';
+import './styles.css';
 
-const LandingPage = () => {
+/* const LandingPage = () => {
 
 const [globalState, setGlobalState] = useContext(AppContext);
 const [state, setState] = useState({ products: []});
@@ -75,7 +75,7 @@ const [state, setState] = useState({ products: []});
     </Jumbotron>
     </div>
   );
-}
+} */
 
 class App extends React.Component {
   render (){
