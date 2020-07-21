@@ -1,13 +1,16 @@
 import React, { useContext, useEffect, useState , Comment} from 'react';
+import { Redirect, Link } from 'react-router-dom';
 import AppContext from './AppContext';
 //import Card from './Card.js';
 import Jumbotron from './Jumbotron.js';
+import Jumbotron00 from './Jumbotron00.js';
 import NavBar from './NavBar.js';
 import NewsletterForm from './NewsletterForm.js';
 import ProductsList from './ProductsList.js';
 import UserAvatar from './UserAvatar.js';
 //import './bootstrap.bundle.min.js';
 import './styles.css';
+import './salon.jpg';
 
 const LandingPage = () => {
 
@@ -39,13 +42,16 @@ const [state, setState] = useState({ products: []});
 return (
     <div>
         <NavBar />
+        <Jumbotron00 
+          title="Cutting Edge" 
+          description="Helping you find a great place to cut hair because we care.">
+        </Jumbotron00>
         <Jumbotron 
           title="Newsletter" 
-          description="Enter your email below to register"
-        >
-          <NewsletterForm />
+          description="Enter your email below to subscribe">
+            <NewsletterForm />
         </Jumbotron>
-
+        <img className="image" src={require('./salon.jpg')} />
         <Jumbotron title="Top Salons" description="Check out these latest trendy items">
             <div className="row">
             {
@@ -70,11 +76,12 @@ return (
             {
                 globalState.loggedIn === false &&
                     <div className="col-lg-4 col-sm-6">
-                        <p>Please login to see the exclusive products.</p>
+                        <p className="topSalonsParagraph">Please <Link to="/login">login</Link> to see the exclusive products.</p>
                     </div>
              }
     </div>
     </Jumbotron>
+    <p>© Copyright 2020 Cutting Edge</p>
     </div>
   );
 };

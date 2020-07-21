@@ -57,7 +57,7 @@ const NewsletterForm = () => {
             { 
                 state.registered &&
                 <div className="alert alert-success" role="alert">
-                    You have successfully registered!
+                    You have successfully subscribed to our Newsletter!
                 </div> 
             }
         </div>
