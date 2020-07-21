@@ -1,9 +1,13 @@
 import React, { useContext, useEffect, useState , Comment} from 'react';
 import AppContext from './AppContext';
-import Card from './Card.js';
+//import Card from './Card.js';
 import Jumbotron from './Jumbotron.js';
 import NavBar from './NavBar.js';
 import NewsletterForm from './NewsletterForm.js';
+import ProductsList from './ProductsList.js';
+import UserAvatar from './UserAvatar.js';
+//import './bootstrap.bundle.min.js';
+import './styles.css';
 
 const LandingPage = () => {
 
@@ -42,33 +46,33 @@ return (
           <NewsletterForm />
         </Jumbotron>
 
-        <Jumbotron 
-          title="Featured Products" 
-          description="Check out these latest trendy items"
-        >
-
-        <div className="row">
-          {
-            globalState.loggedIn === true &&
-            state.products.map(
-              (product)=>
-                <div className="col-lg-4 col-sm-6">
-                  <Card
-                    title={product.brand}
-                    description={product.description}
-                    image={product.image}
-                    buttonLabel="Buy"
-                    buttonLink="#"
-                  />
-                </div>)
-          }
-
-          {
-          globalState.loggedIn === false &&
-            <div className="col-lg-4 col-sm-6">
-              <p>Please login to see the exclusive products.</p>
-            </div>
-          }
+        <Jumbotron title="Top Salons" description="Check out these latest trendy items">
+            <div className="row">
+            {
+                globalState.loggedIn === true &&
+                state.products.map
+                (
+                (product)=>
+                     <div className="col-lg-4 col-sm-6">
+                         <ProductsList
+                            title={product.salonName}
+                            description={product.description}
+                            image={product.salonImage}
+                            location={product.location}
+                            price={product.price}
+                            review={product.clientsReview}
+                            buttonLabel="Book Now"
+                            buttonLink="#"
+                        />
+                </div>
+                )
+            }
+            {
+                globalState.loggedIn === false &&
+                    <div className="col-lg-4 col-sm-6">
+                        <p>Please login to see the exclusive products.</p>
+                    </div>
+             }
     </div>
     </Jumbotron>
     </div>
@@ -96,6 +100,7 @@ class App2 extends React.Component {
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#blog">Blog</a></li>
+                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#salonsList">Salons List</a></li>
                     <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#indicators">Indicators</a></li>
                     <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#testimonials">Testimonials</a></li>
                     <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
